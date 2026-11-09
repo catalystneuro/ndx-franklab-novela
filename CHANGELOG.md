@@ -1,5 +1,12 @@
 # Changelog for ndx-franklab-novela
 
+## Upcoming
+
+- Removed the `hdmf<5` upper bound. The tests pass with hdmf 6.2 and pynwb 4.2, and the bound blocked installing
+  ndx-franklab-novela together with extensions that need hdmf>=6, such as ndx-pose 0.4 and ndx-hed.
+- Updated the `ndx-optogenetics` dependency to version 0.4.1 and capped `ndx-ophys-devices` at `<0.4`.
+  ndx-ophys-devices 0.4.0 changes the layout of `ViralVectorInjection` and removes `FiberInsertion`.
+
 ## 0.2.4 (January 16, 2026)
 
 - Updated `ndx-optogenetics` dependency to version 0.3.0 and minimum `pynwb` dependency to version 3.1.3.
